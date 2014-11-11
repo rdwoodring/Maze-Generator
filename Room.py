@@ -7,6 +7,8 @@ class Room:
         #self.n_exit, self.e_exit, self.s_exit, self.w_exit = False, False, False, False
         self.exits = {Direction.north: False, Direction.east: False, Direction.south: False, Direction.west: False}
         self.x, self.y = x, y
+        self.visited = False
+        self.is_start, self.is_finish = False, False
 
     def __str__(self):
         return "(" + str(self.x) + ", " + str(self.y) + ")"
